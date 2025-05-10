@@ -1,65 +1,45 @@
-export default async function handler(req, res) {
-  const aircraftsRaw = req.query.aircrafts || '';
-  const aircrafts = aircraftsRaw.split(',').map(str => str.trim());
+document.addEventListener('DOMContentLoaded', async () => {
+  const container = document.getElementById('matched-aircraft-parts');
+  const grid = document.getElementById('matched-products-container');
+  if (!container || !grid) return;
 
-  if (!aircrafts.length) {
-    return res.status(400).json({ error: 'Missing aircrafts query param' });
+  const aircraftsRaw = container.dataset.aircrafts || '[]';
+  let aircrafts;
+  try {
+    aircrafts = JSON.parse(aircraftsRaw);
+    console.log("🛩️ Customer aircraft data:", aircrafts);
+  } catch (err) {
+    console.error('❌ Failed to parse aircraft data', err);
+    return;
   }
 
-  const response = await fetch('https://your-shop.myshopify.com/api/2024-01/graphql.json', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'X-Shopify-Storefront-Access-Token': process.env.SHOPIFY_STOREFRONT_TOKEN
-    },
-    body: JSON.stringify({
-      query: `
-        query {
-          products(first: 100) {
-            edges {
-              node {
-                handle
-                metafields(identifiers: [
-                  { namespace: "custom", key: "removed_from_aircraft" }
-                ]) {
-                  key
-                  value
-                  reference {
-                    ... on Metaobject {
-                      fields {
-                        key
-                        value
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      `
-    })
-  });
+  const aircraftsString = aircrafts.map(ac => ac.type).join(',');
+  const response = await fetch(`https://your-vercel-project.vercel.app/api/matched-products?aircrafts=${encodeURIComponent(aircraftsString)}`);
+  const data = await response.json();
+  const matchedHandles = data.handles || [];
 
-  const json = await response.json();
-  const edges = json?.data?.products?.edges || [];
-  const matchedHandles = [];
-
-  for (const edge of edges) {
-    const node = edge.node;
-    const metafield = node.metafields?.find(mf => mf.key === 'removed_from_aircraft');
-
-    let make = '';
-    if (metafield?.reference?.fields) {
-      for (const field of metafield.reference.fields) {
-        if (field.key === 'make') make = field.value;
-      }
-    }
-
-    if (aircrafts.includes(make)) {
-      matchedHandles.push(node.handle);
-    }
+  if (matchedHandles.length === 0) {
+    grid.innerHTML = `<p>No matched parts found for your aircraft.</p>`;
+    return;
   }
 
-  return res.status(200).json({ handles: matchedHandles });
-}
+  const chunkArray = (arr, size) =>
+    Array.from({ length: Math.ceil(arr.length / size) }, (_, i) =>
+      arr.slice(i * size, i * size + size)
+    );
+
+  const chunks = chunkArray(matchedHandles, 20);
+
+  for (const chunk of chunks) {
+    const rawHandles = chunk.join(',');
+    const url = `/sections?section_id=matched-products-server&handles=${encodeURIComponent(rawHandles)}`;
+    console.log(`📡 Fetching chunk → ${url}`);
+
+    try {
+      const html = await fetch(url).then(r => r.text());
+      grid.innerHTML += html;
+    } catch (err) {
+      console.error('❌ Failed to load chunk:', err);
+    }
+  }
+});
