@@ -1,0 +1,119 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_PTTrhy": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_xmRnPY": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h2"
+          }
+        },
+        "text_mtHMGp": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_aUFLKq": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_xmRnPY",
+        "text_mtHMGp",
+        "buttons_aUFLKq"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_JyCgPk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NKzJ3B": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Terms and Conditions for FractionAIR Parts</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_FPRy8b": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>General</strong></p><p>By accessing or using the FractionAIR Parts website and purchasing products from us, you agree to the following terms and conditions. Please review them carefully. If you do not agree to these terms, you should not use this website or purchase any products from us.<br/><br/><strong>Products</strong></p><p>FractionAIR Parts sells used aircraft parts that are <strong>tested and inspected</strong> before being listed for sale. All parts are sold <strong>as-is</strong>, without any certification or warranty. While some parts may come from certified aircraft, they are sold in their dismantled condition. It is the buyer’s responsibility to ensure the part meets their needs before purchasing.<br/><br/>\t•\tProducts requiring freight shipping are <strong>non-refundable</strong>.<br/>\t•\t<strong>Electrical components</strong> are <strong>non-refundable</strong>, unless declared unserviceable by a <strong>certified mechanic</strong>.<br/>\t•\tProducts sold as <strong>cores</strong> are <strong>non-refundable</strong>.<br/><br/><strong>Order Process</strong><br/><br/>\t•\tAll orders are subject to product availability.<br/>\t•\tFractionAIR Parts reserves the right to cancel any order in the event of errors in product descriptions, pricing, or availability.<br/>\t•\tYou will receive an email confirmation upon placing an order. Please ensure your contact information is accurate for communication regarding your order.<br/><br/><strong>Payment</strong><br/><br/>\t•\tWe accept major credit cards, PayPal, and other methods of payment listed at checkout.<br/>\t•\tPrices are in USD or CAD (as applicable) and do not include taxes or shipping fees, which will be added at checkout.<br/>\t•\tOrders are processed only after full payment has been confirmed.<br/><br/><strong>Shipping</strong><br/><br/>\t•\tWe ship both domestically and internationally. Shipping costs are calculated at checkout based on the destination and shipping method.<br/>\t•\t<strong>International buyers</strong> are responsible for all duties, taxes, and import fees, which are not included in the product price or shipping charges.<br/>\t•\tDelivery times may vary due to external factors, such as customs delays or carrier issues.<br/>\t•\tRisk of loss and title pass to the buyer once the order is handed over to the shipping carrier.<br/><br/><strong>Returns & Refunds</strong></p><p>We offer a <strong>30-day money-back guarantee</strong>. If you are not satisfied with your purchase, you may return the item within 30 days of receipt for a refund, provided it is in its original condition and packaging.<br/><br/>\t•\tTo initiate a return, please contact us at <a href=\"mailto:info@fractionairparts.com\" title=\"mailto:info@fractionairparts.com\">info@fractionairparts.com</a> with your order details.<br/>\t•\t<strong>Return shipping costs are the buyer’s responsibility</strong>, unless the product was damaged or incorrect due to an error on our part.<br/>\t•\tRefunds will be processed after the returned item is inspected. Please allow up to 10 business days for the refund to appear in your account.<br/>\t•\tProducts that require freight shipping, electrical components, and items sold as cores are non-refundable.<br/><br/><strong>Liability</strong></p><p>       •\tFractionAIR Parts is not liable for any damage, injury, or loss arising from the use of parts sold through our website. It is the buyer’s responsibility to ensure the proper installation and use of all parts.<br/>\t•\tOur liability is limited to the purchase price of the product.<br/><br/><strong>Privacy</strong></p><p>We take your privacy seriously. Please review our [Privacy Policy for information on how we collect, use, and protect your personal information.<br/><br/><strong>Modifications</strong></p><p>FractionAIR Parts reserves the right to modify these terms and conditions at any time. Changes will be posted on this page, and it is your responsibility to review them periodically. Continued use of the site constitutes acceptance of any changes.<br/><br/><strong>Contact Information</strong></p><p>For any questions or concerns regarding these Terms and Conditions, you can contact us at info@fractionairparts.com or call 419-953-6351.<br/></p><p></p>"
+          }
+        },
+        "button_6bWM3k": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_NKzJ3B",
+        "text_FPRy8b",
+        "button_6bWM3k"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_PTTrhy",
+    "rich_text_JyCgPk"
+  ]
+}

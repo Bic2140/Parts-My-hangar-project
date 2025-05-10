@@ -1,0 +1,101 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "inventory_Ee369f": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 0,
+            "show_inventory_quantity": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "quantity_selector_pXjYQX": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_AfCTCR": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "inventory_Ee369f",
+        "description",
+        "share",
+        "quantity_selector_pXjYQX",
+        "buy_buttons_AfCTCR"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "small",
+        "constrain_to_viewport": false,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "right",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "Other industry favorites",
+        "heading_size": "h2",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 44
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products"
+  ]
+}

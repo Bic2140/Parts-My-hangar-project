@@ -1,0 +1,169 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "inventory_bKK4ww": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 0,
+            "show_inventory_quantity": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "custom_liquid_w6dwVR": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.is_part.value contains \"Yes\" %}\n  {% assign serial_ranges = product.metafields.custom.sn_range.value %}\n  \n  {% assign show_compatibility = false %}\n  {% assign matching_aircraft = null %}\n  {% assign serial_match = false %}\n  {% assign matched_range = \"\" %}\n\n  {% if customer %}\n    {% assign hangar_aircrafts = customer.metafields.hangar.aircrafts %}\n    {% if hangar_aircrafts != blank and hangar_aircrafts.value.size > 0 %}\n      {% assign show_compatibility = true %}\n      {% for aircraft in hangar_aircrafts.value %}\n        {% assign aircraft_serial = aircraft.serial | strip | replace: '-', '' %}\n\n        {% if serial_ranges %}\n          {% for range in serial_ranges %}\n            {% assign parts = range | split: \".\" %}\n            {% assign range_start = parts[0] | strip | replace: '-', '' %}\n            {% assign range_end = parts[1] | strip | replace: '-', '' %}\n\n            {% if range_end == \"0\" %}\n              {% if aircraft_serial >= range_start %}\n                {% assign serial_match = true %}\n                {% assign matching_aircraft = aircraft %}\n                {% assign matched_range = range %}\n              {% endif %}\n            {% else %}\n              {% if aircraft_serial >= range_start and aircraft_serial <= range_end %}\n                {% assign serial_match = true %}\n                {% assign matching_aircraft = aircraft %}\n                {% assign matched_range = range %}\n              {% endif %}\n            {% endif %}\n          {% endfor %}\n        {% endif %}\n      {% endfor %}\n    {% endif %}\n  {% endif %}\n\n  {% if show_compatibility %}\n    <div class=\"product__accordion accordion quick-add-hidden\">\n      <details id=\"Compatibility-{{ section.id }}\" {% if serial_match %}open{% endif %}>\n        <summary>\n          <div class=\"summary__title\" style=\"display: flex; align-items: center; gap: 8px;\">\n            {% if serial_match %}\n              <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"#28a745\" xmlns=\"http://www.w3.org/2000/svg\">\n                <path d=\"M20 6L9 17l-5-5\" stroke=\"#28a745\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n              </svg>\n            {% else %}\n              <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"#dc3545\" xmlns=\"http://www.w3.org/2000/svg\">\n                <path d=\"M18 6L6 18M6 6l12 12\" stroke=\"#dc3545\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n              </svg>\n            {% endif %}\n            <h2 class=\"h4 accordion__title inline-richtext\">Hangar Compatibility (Serial Range)</h2>\n          </div>\n          {% render 'icon-caret' %}\n        </summary>\n\n        <div class=\"accordion__content rte\">\n\n          {% if serial_match %}\n            <p>✅ This part may fit this aircraft listed in your Hangar:</p>\n            <p><strong>{{ matching_aircraft.tail }} {{ matching_aircraft.type }} {{ matching_aircraft.model }}</strong></p>\n            <p><strong>⚠️ Important:</strong> It is the buyer's responsibility to confirm compatibility of all parts before purchasing. Restocking fees may apply on returns.</p>\n          {% else %}\n            <p>❌ This part may not fit your aircraft, or we are unable to verify its compatibility.</p>\n          {% endif %}\n\n          <div style=\"background-color: #797572; padding: 10px; margin-top: 10px;\">\n            <strong>🛠 Compatibility Check :</strong><br/>\n            <br/>\n            <strong>Serial Ranges Allowed:</strong><br/>\n            {% if serial_ranges %}\n              {% for range in serial_ranges %}\n                {% assign parts = range | split: \".\" %}\n                {% if range == matched_range %}\n                  <span style=\"background-color: #28a745; color: white; padding: 2px 6px; border-radius: 4px;\">\n                {% endif %}\n                  {{ parts[0] }}\n                  {% if parts[1] == \"0\" %}\n                    and on\n                  {% else %}\n                    to {{ parts[1] }}\n                  {% endif %}\n                {% if range == matched_range %}\n                  </span>\n                {% endif %}\n                {% unless forloop.last %}, {% endunless %}\n              {% endfor %}\n            {% else %}\n              (No Serial Restrictions)\n            {% endif %}\n            \n            <hr/>\n            {% if matching_aircraft %}\n              <strong>Your Hangar Aircraft:</strong> {{ matching_aircraft.tail }} - {{ matching_aircraft.type }} {{ matching_aircraft.model }}<br/>\n              <strong>Aircraft Serial:</strong> {{ matching_aircraft.serial }}<br/>\n            {% else %}\n              No matching serial number found.\n            {% endif %}\n          </div>\n\n        </div>\n      </details>\n    </div>\n  {% endif %}\n{% endif %}"
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "quantity_selector_XazP4F": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_AfCTCR": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "inventory_bKK4ww",
+        "description",
+        "custom_liquid_w6dwVR",
+        "share",
+        "quantity_selector_XazP4F",
+        "buy_buttons_AfCTCR"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "small",
+        "constrain_to_viewport": false,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "right",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_DxGHfB": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Ay7XRp": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_UCVdgx": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Quality Assurance:</strong> All our used aircraft parts are thoroughly inspected and tested for functionality. Shop with confidence knowing you’re getting reliable parts.</p><p><strong>Fast Processing:</strong> Orders are processed within 1-3 business days. You’ll receive tracking information as soon as your order ships.</p><p><strong>Easy Returns:</strong> We accept returns within 30 days of purchase. Items must be in original condition. Contact us at <a>info@fractionairparts.com</a> for assistance.</p><p><strong>Customer Support:</strong> Have questions or need help? Reach out to us at <a>info@fractionairparts.com</a>. We’re here to ensure your satisfaction.</p><p><strong>Disclaimer:</strong> All electronic parts and avionics must be installed by a certified mechanic to be warrantied. All parts are sold in \"as removed\" condition. We do not certify the parts, and their use is solely the buyer's responsibility.</p>"
+          }
+        },
+        "button_NjT6JT": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Ay7XRp",
+        "text_UCVdgx",
+        "button_NjT6JT"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "17374226552a090ffa": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_Mj8WpX": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_Mj8WpX"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "Other industry favorites",
+        "heading_size": "h2",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 44
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_DxGHfB",
+    "17374226552a090ffa",
+    "related-products"
+  ]
+}

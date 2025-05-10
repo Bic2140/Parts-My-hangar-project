@@ -1,0 +1,227 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "inventory_9JCzJ8": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 0,
+            "show_inventory_quantity": true
+          }
+        },
+        "custom_liquid_7GGWAD": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<button id=\"InquireButton-template--23039284019506__main\" type=\"button\" class=\"product-form__submit button button--full-width button--secondary\">\n  <span>Inquire About This Part</span>\n  <div class=\"loading__spinner hidden\">\n    <svg aria-hidden=\"true\" focusable=\"false\" class=\"spinner\" viewBox=\"0 0 66 66\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle class=\"path\" fill=\"none\" stroke-width=\"6\" cx=\"33\" cy=\"33\" r=\"30\"></circle>\n    </svg>\n  </div>\n</button>\n\n<script>\n  document.getElementById('InquireButton-template--23039284019506__main').addEventListener('click', function() {\n    window.location.href = 'https://www.fractionairparts.com/pages/contact?product={{ product.title }}';\n  });\n</script>"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "inventory_9JCzJ8",
+        "custom_liquid_7GGWAD"
+      ],
+      "custom_css": [
+        ".grid__item.product__media-wrapper {display: none;}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "small",
+        "constrain_to_viewport": false,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "right",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_z6kfna": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_dprtCj": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.title }} Part Details",
+            "heading_size": "h2"
+          }
+        },
+        "text_jqtiJe": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Aircraft Part Details</strong></p><p>These parts were received as a lot from a 1988 British Aerospace Model 3112 Jetstream 31.<br/>Serial Number: 802<br/>Registration: C-FBID</p><p><strong>Condition:</strong><br/>The parts were received in boxes, each accompanied by tags identifying the part number and description. Our team meticulously inventoried the items as they were received.</p><p><strong>Airframe Times:</strong> Not available.</p><p><br/><strong>Traceability:</strong> Partial. Tags with part numbers and descriptions are included.</p><p><strong>Important Information for Buyers:</strong></p><ul><li>Parts are sold as-is and include <strong>partial traceability</strong>.</li><li>These parts are <strong>non-refundable</strong>, so buyers are encouraged to verify part information. Photos of specific parts are available upon request.</li><li>Parts are not certified unless explicitly stated and are sold \"as removed.\"</li></ul><p></p><p><strong>Interested in </strong>{{ product.title }}?</p><p>Contact us at <a><strong>info@fractionairparts.com</strong></a> or use the <strong>contact form</strong> available on this page for inquiries. Our team will provide detailed information, photos, and pricing upon request.</p><p><strong>Additional Notes:</strong></p><ul><li>International buyers are responsible for duties, taxes, and shipping costs.</li></ul><p>FractionAIR Parts is dedicated to providing quality aviation spare parts with reliable information and traceability to the extent available.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dprtCj",
+        "text_jqtiJe"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/British_Aerospace_logo_1024x1024_30076763-1fa1-4293-b9c0-7ed7b1e642bc.png",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_G8UXFq": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".price {display: none;}",
+        ".price--sold-out {display: none;}",
+        ".badge {display: none;}"
+      ],
+      "settings": {
+        "title": "MORE  {{ section.settings.collection.title }} PARTS",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "uppercase",
+        "collection": "bae",
+        "products_to_show": 25,
+        "columns_desktop": 6,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "Other industry favorites",
+        "heading_size": "h2",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 44
+      }
+    },
+    "featured_collection_BXrm9A": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "More parts from FractionAIR Parts",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all-products",
+        "products_to_show": 6,
+        "columns_desktop": 6,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_DxGHfB": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Ay7XRp": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_UCVdgx": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Quality Assurance:</strong> All our used aircraft parts are thoroughly inspected and tested for functionality. Shop with confidence knowing you’re getting reliable parts.</p><p><strong>Fast Processing:</strong> Orders are processed within 1-3 business days. You’ll receive tracking information as soon as your order ships.</p><p></p><p><strong>Customer Support:</strong> Have questions or need help? Reach out to us at <a>info@fractionairparts.com</a>. We’re here to ensure your satisfaction.</p><p><strong>Disclaimer:</strong> All electronic parts and avionics must be installed by a certified mechanic to be warrantied. All parts are sold in \"as removed\" condition. We do not certify the parts, and their use is solely the buyer's responsibility.</p>"
+          }
+        },
+        "button_NjT6JT": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Ay7XRp",
+        "text_UCVdgx",
+        "button_NjT6JT"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_z6kfna",
+    "featured_collection_G8UXFq",
+    "related-products",
+    "featured_collection_BXrm9A",
+    "rich_text_DxGHfB"
+  ]
+}

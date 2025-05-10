@@ -1,0 +1,207 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_ciKqpV": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "square"
+          }
+        },
+        "inventory_nDfqmf": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 0,
+            "show_inventory_quantity": true
+          }
+        },
+        "custom_liquid_66AK6A": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.is_part.value contains 'Yes' %}\n  {% if product.metafields.custom.part_name.value %}\n    <p><strong>Description:</strong> {{ product.metafields.custom. part_name.value }}</p>\n  {% endif %}\n{% endif %}"
+          }
+        },
+        "custom_liquid_kdMpRa": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.condition.value %}\n  {% if product.metafields.custom.condition.value %}\n    <p><strong>Condition:</strong> {{ product.metafields.custom. condition.value }}</p>\n  {% endif %}\n{% endif %}"
+          }
+        },
+        "custom_liquid_dqdq4p": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.is_part.value contains 'Yes' %}\n  {% if product.metafields.custom.PN.value %}\n    <p><strong>P/N:</strong> {{ product.metafields.custom.PN.value }}</p>\n  {% endif %}\n{% endif %}"
+          }
+        },
+        "custom_liquid_qRcXWW": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.is_part.value contains 'Yes' %}\n  {% if product.metafields.custom.mfr.value %}\n    <p><strong>Manufacturer:</strong> {{ product.metafields.custom.mfr.value }}</p>\n  {% endif %}\n{% endif %}"
+          }
+        },
+        "custom_liquid_FXHh7E": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.is_part.value contains 'Yes' %}\n  {% if product.metafields.custom.sn.value %}\n    <p><strong>S/N:</strong> {{ product.metafields.custom.sn.value }}</p>\n  {% endif %}\n{% endif %}"
+          }
+        },
+        "custom_liquid_WyihCC": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.is_part.value contains 'Yes' %}\n  {% if product.metafields.custom.alt_pn.value %}\n    <p><strong>Alt P/N:</strong> {{ product.metafields.custom.alt_pn.value }}</p>\n  {% endif %}\n{% endif %}"
+          }
+        },
+        "custom_liquid_Tkat6C": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.is_part.value contains 'Yes' %}\n  {% if product.metafields.custom.notes.value %}\n    <p><strong>Notes:</strong> {{ product.metafields.custom.notes.value }}</p>\n  {% endif %}\n{% endif %}"
+          }
+        },
+        "custom_liquid_A4zEAk": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.is_part.value contains \"Yes\" %}\n  {% assign removed_aircraft = product.metafields.custom.removed_from_aircraft.value %}\n  {% assign registration = removed_aircraft.registration.value | default: blank %}\n\n  <div class=\"product__accordion accordion quick-add-hidden\">\n    <details id=\"Traceability-{{ section.id }}\">\n      <summary>\n        <div class=\"summary__title\" style=\"display: flex; align-items: center; gap: 8px;\">\n          <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"#28a745\" xmlns=\"http://www.w3.org/2000/svg\">\n            <path d=\"M20 6L9 17l-5-5\" stroke=\"#28a745\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n          </svg>\n          <h2 class=\"h4 accordion__title inline-richtext\">Traceability</h2>\n        </div>\n        {% render 'icon-caret' %}\n      </summary>\n\n      <div class=\"accordion__content rte\">\n        {% if registration != blank %}\n          <p>\n            Removed from: {{ removed_aircraft.removed_from.value }}<br/>\n            Reg: {{ removed_aircraft.registration.value }} - S/N: {{ removed_aircraft.aircraft_s_n.value }}<br/>\n            A/C TTSN: {{ removed_aircraft.a_c_ttsn.value }}\n          </p>\n        {% else %}\n          <p>No traceability available</p>\n        {% endif %}\n      </div>\n    </details>\n  </div>\n{% endif %}"
+          }
+        },
+        "custom_liquid_hiBKfe": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.is_part.value contains \"Yes\" %}\n  {% assign part_mfr = product.metafields.custom.mfr.value | downcase | strip %}\n  {% assign removed_aircraft = product.metafields.custom.removed_from_aircraft.value %}\n  {% assign removed_model = removed_aircraft.model.value | downcase | strip %}\n  {% assign removed_make = removed_aircraft.make.value | downcase | strip %}\n  {% assign serial_ranges = product.metafields.custom.sn_range.value %}\n\n  {% assign show_compatibility = false %}\n  {% assign matching_aircraft = null %}\n  {% assign serial_match = false %}\n  {% assign model_match = false %}\n  {% assign matched_range = \"\" %}\n  {% assign has_serials = false %}\n\n  {% if serial_ranges and serial_ranges.size > 0 %}\n    {% assign has_serials = true %}\n  {% endif %}\n\n  {% if customer %}\n    {% assign hangar_aircrafts = customer.metafields.hangar.aircrafts %}\n    {% if hangar_aircrafts != blank and hangar_aircrafts.value.size > 0 %}\n      {% assign show_compatibility = true %}\n      {% for aircraft in hangar_aircrafts.value %}\n        {% assign aircraft_serial = aircraft.serial | strip | replace: '-', '' %}\n        {% assign aircraft_make = aircraft.type | downcase | strip %}\n        {% assign aircraft_model = aircraft.model | downcase | strip %}\n\n        {% if aircraft_make == part_mfr and has_serials %}\n          {% for range_string in serial_ranges %}\n            {% assign split_ranges = range_string | split: \",\" %}\n            {% for range in split_ranges %}\n              {% assign range = range | strip %}\n              {% assign normalized = range | downcase %}\n\n              {% if range contains \".\" %}\n                {% assign parts = range | split: \".\" %}\n                {% assign range_start = parts[0] | strip | replace: '-', '' %}\n                {% assign range_end = parts[1] | strip | replace: '-', '' %}\n                {% if range_end == \"0\" %}\n                  {% if aircraft_serial >= range_start %}\n                    {% assign serial_match = true %}\n                    {% assign matching_aircraft = aircraft %}\n                    {% assign matched_range = range_string %}\n                  {% endif %}\n                {% else %}\n                  {% if aircraft_serial >= range_start and aircraft_serial <= range_end %}\n                    {% assign serial_match = true %}\n                    {% assign matching_aircraft = aircraft %}\n                    {% assign matched_range = range_string %}\n                  {% endif %}\n                {% endif %}\n              \n              {% elsif normalized contains \"thru\" %}\n                {% assign parts = range | split: \"thru\" %}\n                {% assign range_start = parts[0] | strip | replace: '-', '' %}\n                {% assign range_end = parts[1] | strip | replace: '-', '' %}\n                {% if aircraft_serial >= range_start and aircraft_serial <= range_end %}\n                  {% assign serial_match = true %}\n                  {% assign matching_aircraft = aircraft %}\n                  {% assign matched_range = range_string %}\n                {% endif %}\n              \n              {% elsif normalized contains \"& on\" or normalized contains \"and up\" or normalized contains \"and on\" %}\n                {% assign cleaned = range | replace: \"& ON\", \"\" | replace: \"and up\", \"\" | replace: \"AND UP\", \"\" | replace: \"and on\", \"\" | strip | replace: '-', '' %}\n                {% if aircraft_serial >= cleaned %}\n                  {% assign serial_match = true %}\n                  {% assign matching_aircraft = aircraft %}\n                  {% assign matched_range = range_string %}\n                {% endif %}\n              \n              {% else %}\n                {% assign unique_serial = range | strip | replace: '-', '' %}\n                {% if aircraft_serial == unique_serial %}\n                  {% assign serial_match = true %}\n                  {% assign matching_aircraft = aircraft %}\n                  {% assign matched_range = range_string %}\n                {% endif %}\n              {% endif %}\n            {% endfor %}\n          {% endfor %}\n        {% else %}\n          {% if aircraft_model == removed_model and aircraft_make == removed_make %}\n            {% assign model_match = true %}\n            {% assign matching_aircraft = aircraft %}\n          {% endif %}\n        {% endif %}\n      {% endfor %}\n    {% endif %}\n  {% endif %}\n\n  {% if show_compatibility %}\n    <div class=\"product__accordion accordion quick-add-hidden\">\n      <details id=\"Compatibility-{{ section.id }}\" {% if serial_match or model_match %}open{% endif %}>\n        <summary>\n          <div class=\"summary__title\" style=\"display: flex; align-items: center; gap: 8px;\">\n            {% if serial_match or model_match %}\n              <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"#28a745\" xmlns=\"http://www.w3.org/2000/svg\">\n                <path d=\"M20 6L9 17l-5-5\" stroke=\"#28a745\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n              </svg>\n            {% else %}\n              <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"#dc3545\" xmlns=\"http://www.w3.org/2000/svg\">\n                <path d=\"M18 6L6 18M6 6l12 12\" stroke=\"#dc3545\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n              </svg>\n            {% endif %}\n            <h2 class=\"h4 accordion__title inline-richtext\">Hangar Compatibility</h2>\n          </div>\n          {% render 'icon-caret' %}\n        </summary>\n\n        <div class=\"accordion__content rte\">\n\n          {% if serial_match %}\n            <p>✅ This part may fit this aircraft listed in your Hangar:</p>\n            <p><strong>{{ matching_aircraft.tail }} {{ matching_aircraft.type }} {{ matching_aircraft.model }}</strong></p>\n            <p><strong>⚠️ Important:</strong> It is the buyer's responsibility to confirm compatibility of all parts before purchasing. Restocking fees may apply on returns.</p>\n          {% elsif model_match %}\n            <p>✅ This part was removed from the same aircraft model as your Hangar aircraft:</p>\n            <p><strong>{{ matching_aircraft.tail }} {{ matching_aircraft.type }} {{ matching_aircraft.model }}</strong></p>\n            <p><strong>⚠️ Important:</strong> This part cannot be verified by serial number. It may or may not fit your aircraft. It is the buyer’s responsibility to confirm compatibility. Restocking fees may apply on returns.</p>\n          {% else %}\n            <p>❌ This part may not fit your aircraft, or we are unable to verify its compatibility.</p>\n          {% endif %}\n\n          <div style=\"background-color: #797572; padding: 10px; margin-top: 10px;\">\n            <strong>🛠 Compatibility Check :</strong><br/>\n            <br/>\n            <strong>Serial Ranges Allowed:</strong><br/>\n{% if serial_ranges %}\n  <ul style=\"padding-left: 20px; margin-top: 10px;\">\n    {% for range_string in serial_ranges %}\n      {% assign split_ranges = range_string | split: \",\" %}\n      {% for range in split_ranges %}\n        {% assign range = range | strip %}\n        {% assign normalized = range | downcase %}\n\n        <li style=\"margin-bottom: 4px;\">\n          {% if range contains \".\" %}\n            {% assign parts = range | split: \".\" %}\n            {% if range_string == matched_range %}\n              <span style=\"background-color: #28a745; color: white; padding: 2px 6px; border-radius: 4px;\">\n            {% endif %}\n              {{ parts[0] }}\n              {% if parts[1] == \"0\" %}\n                and on\n              {% else %}\n                to {{ parts[1] }}\n              {% endif %}\n            {% if range_string == matched_range %}\n              </span>\n            {% endif %}\n\n          {% elsif normalized contains \"thru\" %}\n            {% assign parts = range | split: \"thru\" %}\n            {% if range_string == matched_range %}\n              <span style=\"background-color: #28a745; color: white; padding: 2px 6px; border-radius: 4px;\">\n            {% endif %}\n              {{ parts[0] | strip }} to {{ parts[1] | strip }}\n            {% if range_string == matched_range %}\n              </span>\n            {% endif %}\n\n          {% elsif normalized contains \"& on\" or normalized contains \"and up\" or normalized contains \"and on\" %}\n            {% assign cleaned = range | replace: \"& ON\", \"\" | replace: \"and up\", \"\" | replace: \"AND UP\", \"\" | replace: \"and on\", \"\" %}\n            {% if range_string == matched_range %}\n              <span style=\"background-color: #28a745; color: white; padding: 2px 6px; border-radius: 4px;\">\n            {% endif %}\n              {{ cleaned | strip }} and on\n            {% if range_string == matched_range %}\n              </span>\n            {% endif %}\n\n          {% else %}\n            {% if range_string == matched_range %}\n              <span style=\"background-color: #28a745; color: white; padding: 2px 6px; border-radius: 4px;\">\n            {% endif %}\n              {{ range }}\n            {% if range_string == matched_range %}\n              </span>\n            {% endif %}\n          {% endif %}\n        </li>\n      {% endfor %}\n    {% endfor %}\n  </ul>\n{% else %}\n  (No Serial Restrictions)\n{% endif %}\n\n            <hr/>\n            {% if matching_aircraft %}\n              <strong>Your Hangar Aircraft:</strong> {{ matching_aircraft.tail }} - {{ matching_aircraft.type }} {{ matching_aircraft.model }}<br/>\n              <strong>Aircraft Serial:</strong> {{ matching_aircraft.serial }}<br/>\n            {% else %}\n              No matching aircraft found.\n            {% endif %}\n          </div>\n\n        </div>\n      </details>\n    </div>\n  {% endif %}\n{% endif %}"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "quantity_selector_pFDRp6": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_cWGmPR": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "variant_picker_ciKqpV",
+        "inventory_nDfqmf",
+        "custom_liquid_66AK6A",
+        "custom_liquid_kdMpRa",
+        "custom_liquid_dqdq4p",
+        "custom_liquid_qRcXWW",
+        "custom_liquid_FXHh7E",
+        "custom_liquid_WyihCC",
+        "custom_liquid_Tkat6C",
+        "custom_liquid_A4zEAk",
+        "custom_liquid_hiBKfe",
+        "description",
+        "quantity_selector_pFDRp6",
+        "buy_buttons_cWGmPR",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "small",
+        "constrain_to_viewport": false,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "right",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_y38JCK": {
+      "type": "rich-text",
+      "blocks": {
+        "text_gr38iw": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Quality Assurance:</strong> All our used aircraft parts are thoroughly inspected and tested for functionality. Shop with confidence knowing you’re getting reliable parts.</p><p><strong>Fast Processing:</strong> Orders are processed within 1-3 business days. You’ll receive tracking information as soon as your order ships.</p><p><strong>Easy Returns:</strong> We accept returns within 30 days of purchase. Items must be in original condition. Contact us at <a>info@fractionairparts.com</a> for assistance.</p><p><strong>Customer Support:</strong> Have questions or need help? Reach out to us at <a>info@fractionairparts.com</a>. We’re here to ensure your satisfaction.</p><p><strong>Disclaimer:</strong> All electronic parts and avionics must be installed by a certified mechanic to be warrantied. All parts are sold in \"as removed\" condition. We do not certify the parts, and their use is solely the buyer's responsibility.</p>"
+          }
+        },
+        "button_fLKDzn": {
+          "type": "button",
+          "settings": {
+            "button_label": "Our Store Policy",
+            "button_link": "shopify://pages/store-policy",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "text_gr38iw",
+        "button_fLKDzn"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "Other industry favorites",
+        "heading_size": "h2",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 44
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_y38JCK",
+    "related-products"
+  ]
+}

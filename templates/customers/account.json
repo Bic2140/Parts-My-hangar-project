@@ -1,0 +1,101 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "account_menu": {
+      "type": "account-menu",
+      "custom_css": [
+        ".account-menu ul {list-style: none; padding: 0; margin-bottom: 20px;}",
+        ".account-menu li {margin-bottom: 10px;}",
+        ".account-menu a {font-weight: 600; color: #333; text-decoration: none;}",
+        ".account-menu a:hover {color: #0070f3;}"
+      ],
+      "settings": {}
+    },
+    "main": {
+      "type": "main-account",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_rwfkDX": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_JCWNBx": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_BaYa4a": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_7KhnQ3": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "button_label_3": "Button label",
+            "button_link_3": "",
+            "button_style_secondary_3": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_JCWNBx",
+        "text_BaYa4a",
+        "buttons_7KhnQ3"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/93A3A98F-1AF0-4DA9-8B4C-41B5D3779D99.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "custom_liquid_xKXfTQ": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "{% if customer %}\n<div id=\"my-hangar-dashboard\" style=\"max-width: 800px; margin: 20px auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px;\">\n  <h2 style=\"text-align: center;\">✈️ My Hangar</h2>\n\n  {% assign aircrafts_json = customer.metafields.hangar.aircrafts %}\n\n  {% if aircrafts_json != blank %}\n    <div id=\"aircraft-list\">\n      {% for aircraft in aircrafts_json.value %}\n        <div class=\"aircraft-card\" data-index=\"{{ forloop.index0 }}\" style=\"margin-top: 20px; padding: 15px; background-color: #f9f9f9; border-radius: 6px;\">\n          <p><strong>Type:</strong> {{ aircraft.type }}</p>\n          <p><strong>Model:</strong> {{ aircraft.model }}</p>\n          <p><strong>Year:</strong> {{ aircraft.year }}</p>\n          <p><strong>Tail Number:</strong> {{ aircraft.tail }}</p>\n          <p><strong>Serial Number:</strong> {{ aircraft.serial }}</p>\n\n          <div style=\"margin-top: 10px; display: flex; gap: 10px;\">\n            <button class=\"edit-aircraft-btn\" style=\"flex:1; padding: 8px; background-color: #0070f3; color: white; border: none; border-radius: 4px; cursor: pointer;\">\n              Edit\n            </button>\n            <button class=\"delete-aircraft-btn\" style=\"flex:1; padding: 8px; background-color: #dc3545; color: white; border: none; border-radius: 4px; cursor: pointer;\">\n              Delete\n            </button>\n          </div>\n        </div>\n      {% endfor %}\n    </div>\n  {% else %}\n    <p style=\"text-align: center;\">You have not added any aircraft yet.</p>\n  {% endif %}\n\n  <div style=\"margin-top: 20px; text-align: center;\">\n    <button id=\"add-aircraft-btn\" style=\"padding: 10px 20px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer;\">\n      Add New Aircraft\n    </button>\n  </div>\n\n  <form id=\"aircraft-form\" style=\"margin-top: 20px; display: none;\">\n    <input type=\"hidden\" id=\"aircraft-index\" value=\"\">\n    <input type=\"text\" id=\"input-type\" placeholder=\"Type (e.g., Piper)\" style=\"width: 100%; padding: 8px; margin-bottom: 10px;\">\n    <input type=\"text\" id=\"input-model\" placeholder=\"Model (e.g., PA-28 Cherokee)\" style=\"width: 100%; padding: 8px; margin-bottom: 10px;\">\n    <input type=\"text\" id=\"input-year\" placeholder=\"Year (e.g., 1980)\" style=\"width: 100%; padding: 8px; margin-bottom: 10px;\">\n    <input type=\"text\" id=\"input-tail\" placeholder=\"Tail Number (e.g., C-GABC)\" style=\"width: 100%; padding: 8px; margin-bottom: 10px;\">\n    <input type=\"text\" id=\"input-serial\" placeholder=\"Serial Number (e.g., 28-12345)\" style=\"width: 100%; padding: 8px; margin-bottom: 10px;\">\n    <button type=\"submit\" style=\"width: 100%; padding: 10px; background-color: #0070f3; color: white; border: none; border-radius: 4px;\">\n      Save Aircraft\n    </button>\n  </form>\n</div>\n\n<script>\nconst addBtn = document.getElementById('add-aircraft-btn');\nconst aircraftForm = document.getElementById('aircraft-form');\nconst aircraftIndexInput = document.getElementById('aircraft-index');\nconst typeInput = document.getElementById('input-type');\nconst modelInput = document.getElementById('input-model');\nconst yearInput = document.getElementById('input-year');\nconst tailInput = document.getElementById('input-tail');\nconst serialInput = document.getElementById('input-serial');\nconst editButtons = document.querySelectorAll('.edit-aircraft-btn');\nconst deleteButtons = document.querySelectorAll('.delete-aircraft-btn');\n\naddBtn.addEventListener('click', () => {\n  aircraftForm.reset();\n  aircraftIndexInput.value = '';\n  aircraftForm.style.display = 'block';\n  addBtn.style.display = 'none';\n});\n\neditButtons.forEach(button => {\n  button.addEventListener('click', (e) => {\n    const card = e.target.closest('.aircraft-card');\n    const index = card.dataset.index;\n    const fields = card.querySelectorAll('p');\n\n    aircraftIndexInput.value = index;\n    typeInput.value = fields[0].innerText.replace('Type: ', '');\n    modelInput.value = fields[1].innerText.replace('Model: ', '');\n    yearInput.value = fields[2].innerText.replace('Year: ', '');\n    tailInput.value = fields[3].innerText.replace('Tail Number: ', '');\n    serialInput.value = fields[4].innerText.replace('Serial Number: ', '');\n\n    aircraftForm.style.display = 'block';\n    addBtn.style.display = 'none';\n  });\n});\n\ndeleteButtons.forEach(button => {\n  button.addEventListener('click', async (e) => {\n    if (!confirm('Are you sure you want to delete this aircraft?')) return;\n\n    const card = e.target.closest('.aircraft-card');\n    const index = parseInt(card.dataset.index);\n\n    try {\n      const res = await fetch('https://hangar-backend.vercel.app/api/delete-aircraft', {\n        method: 'POST',\n        headers: { 'Content-Type': 'application/json' },\n        body: JSON.stringify({\n          customerId: {{ customer.id }},\n          aircraftIndex: index\n        })\n      });\n\n      const result = await res.json();\n\n      if (res.ok && result.success) {\n        alert('✅ Aircraft deleted successfully!');\n        window.location.reload();\n      } else {\n        alert('⚠️ Failed to delete aircraft. Please try again.');\n      }\n    } catch (error) {\n      console.error('Error deleting aircraft:', error);\n      alert('❌ An error occurred. Please try again.');\n    }\n  });\n});\n\naircraftForm.addEventListener('submit', async (e) => {\n  e.preventDefault();\n\n  const aircraftData = {\n    type: typeInput.value.trim(),\n    model: modelInput.value.trim(),\n    year: yearInput.value.trim(),\n    tail: tailInput.value.trim(),\n    serial: serialInput.value.trim()\n  };\n\n  try {\n    const res = await fetch('https://hangar-backend.vercel.app/api/save-aircraft', {\n      method: 'POST',\n      headers: { 'Content-Type': 'application/json' },\n      body: JSON.stringify({\n        customerId: {{ customer.id }},\n        aircraft: aircraftData,\n        editIndex: aircraftIndexInput.value || null\n      })\n    });\n\n    const result = await res.json();\n\n    if (res.ok && result.success) {\n      alert('✅ Aircraft saved successfully!');\n      window.location.reload();\n    } else {\n      alert('⚠️ Failed to save aircraft. Please try again.');\n    }\n  } catch (error) {\n    console.error('Error saving aircraft:', error);\n    alert('❌ An error occurred. Please try again.');\n  }\n});\n</script>\n{% endif %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "account_menu",
+    "main",
+    "image_banner_rwfkDX",
+    "custom_liquid_xKXfTQ"
+  ]
+}

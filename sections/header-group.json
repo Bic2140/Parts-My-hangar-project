@@ -1,0 +1,123 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement_bar_JtbtjG": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_gDxFFJ": {
+          "type": "announcement",
+          "settings": {
+            "text": "Due to Canada Post strike, there may be delays in shipping. We encourage you to place orders early and consider alternate shipping options if time-sensitive. Thank you for your understanding!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_gDxFFJ"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-5d294f39-2335-4ab7-9239-179a36058b20",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_ccGg8W": {
+          "type": "announcement",
+          "settings": {
+            "text": "Click Here to Follow us on Facebook for our most recent updates!",
+            "link": "https://www.facebook.com/fractionairparts"
+          }
+        },
+        "announcement-bar-0": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_ccGg8W",
+        "announcement-bar-0"
+      ],
+      "settings": {
+        "color_scheme": "scheme-4",
+        "show_line_separator": false,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "logo_position": "middle-left",
+        "menu": "main_menu",
+        "menu_type_desktop": "mega",
+        "sticky_header_type": "none",
+        "show_line_separator": true,
+        "color_scheme": "scheme-4",
+        "menu_color_scheme": "",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "enable_customer_avatar": true,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "announcement_bar_WaXAtL": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_kkJ3RP": {
+          "type": "announcement",
+          "settings": {
+            "text": "New parts added daily! Can’t find what you’re looking for? Come visit us again. It might be there next time.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_kkJ3RP"
+      ],
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    }
+  },
+  "order": [
+    "announcement_bar_JtbtjG",
+    "announcement-bar",
+    "header",
+    "announcement_bar_WaXAtL"
+  ]
+}

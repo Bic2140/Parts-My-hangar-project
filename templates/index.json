@@ -1,0 +1,630 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Welcome TO FRACTIONAIR QUALITY PARTS",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Find the parts you need",
+            "heading_size": "h1"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "Search",
+            "button_link_2": "/search?",
+            "button_style_secondary_2": false,
+            "button_label_3": "Pilot supplies & Consumables Available in Store",
+            "button_link_3": "shopify://collections/pilot-supplies",
+            "button_style_secondary_3": false
+          }
+        }
+      },
+      "block_order": [
+        "text",
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/used_airplane_parts.jpg",
+        "image_overlay_opacity": 50,
+        "image_height": "small",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-5",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": true
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Outstanding service | Exclusive pricing | Industry expertise</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 4,
+        "padding_bottom": 4
+      }
+    },
+    "image_with_text_BKq4we": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_VYqdTp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Listing has started – Find your parts now!",
+            "heading_size": "h1"
+          }
+        },
+        "text_hRNAmb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In flying condition with a current annual at the time of a tow bar prop strike, this Piper PA-38-112 Tomahawk II is now your chance to grab clean, well-maintained parts before they hit the site.<br/><br/>High-demand components won't last — get your requests in early!<br/><br/>📩 Email <a><strong>info@fractionairparts.com</strong></a> to claim what you need or hit the button below.<br/><br/></p>",
+            "text_style": "body"
+          }
+        },
+        "button_fVmzqi": {
+          "type": "button",
+          "settings": {
+            "button_label": "Browse Piper PA-38 parts",
+            "button_link": "shopify://collections/c-falh-pa-38-piper-tomahawk-ii",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_VYqdTp",
+        "text_hRNAmb",
+        "button_fVmzqi"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/IMG_3245.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-5",
+        "color_scheme": "scheme-4",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_PWwqAX": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n  .brand-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    flex-wrap: wrap;\n    gap: 20px;\n    width: 60%;\n    margin: 0 auto;\n    padding: 0 10px;\n  }\n\n  .brand-container a {\n    flex: 1 1 150px; /* Default size for desktop */\n    text-align: center; /* Center images in their flex item */\n  }\n\n  @media screen and (max-width: 768px) {\n    .brand-container {\n      width: 100%; /* Full width on mobile */\n      justify-content: center; /* Center align for rows */\n    }\n\n    .brand-container a {\n      flex: 1 1 45%; /* Two items per row */\n      max-width: 45%; /* Ensures images fit within columns */\n    }\n  }\n</style>\n\n<div class=\"collection__title title-wrapper title-wrapper--no-top-margin page-width\" style=\"text-align: left; margin-bottom: 20px;\">\n  <h2 class=\"title inline-richtext h1 scroll-trigger animate--slide-in\">\n    {{ 'shop.brand' | t }}\n  </h2>\n</div>\n\n<div class=\"brand-container\">\n  <!-- Brand 1 -->\n  <a href=\"/collections/Cessna\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0886/9494/8146/files/Cessna-logo.png?v=1721322604\" alt=\"Cessna Parts\" style=\"width: 150px; height: auto; display: block;\"/>\n  </a>\n\n  <!-- Brand 2 -->\n  <a href=\"/collections/Mooney\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0886/9494/8146/files/Mooney.gif?v=1721322644\" alt=\"Mooney Parts\" style=\"width: 150px; height: auto; display: block;\"/>\n  </a>\n\n  <!-- Brand 3 -->\n  <a href=\"/collections/Piper\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0886/9494/8146/files/kisspng-piper-aircraft-vero-beach-regional-airport-aviatio-cirrus-aircraft-5b3dc8f8268e86.6607159815307758001579.png?v=1721322689\" alt=\"Piper Parts\" style=\"width: 150px; height: auto; display: block;\"/>\n  </a>\n\n  <!-- Brand 4 -->\n  <a href=\"/collections/Beechcraft\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0886/9494/8146/files/kisspng-beechcraft-bonanza-aircraft-beechcraft-baron-airpl-5b243db5a6b2d1.8210628115291017496828.png?v=1721322737\" alt=\"Beechcraft Parts\" style=\"width: 150px; height: auto; display: block;\"/>\n  </a>\n\n  <!-- Brand 5 -->\n  <a href=\"/collections/Grumman\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0886/9494/8146/files/Grumman_logo.svg?v=1732418569\" alt=\"Grumman Parts\" style=\"width: 150px; height: auto; display: block;\"/>\n  </a>\n\n  <!-- Brand 7 -->\n  <a href=\"/collections/BAE\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0886/9494/8146/files/British_Aerospace_logo.png?v=1735836795\" alt=\"BAE Parts\" style=\"width: 150px; height: auto; display: block;\"/>\n  </a>\n\n <!-- Brand 6 -->\n  <a href=\"/collections/Robinson\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0886/9494/8146/files/png-clipart-robinson-r44-robinson-r66-robinson-helicopter-company-robinson-r22-company-logo-company-text.png?v=1732418936\" alt=\"Robinson Parts\" style=\"width: 150px; height: auto; display: block;\"/>\n  </a>\n</div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collection_list": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "airframe"
+          }
+        },
+        "featured_collection2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "electrical"
+          }
+        },
+        "featured_collection3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "avionics"
+          }
+        },
+        "featured_collection4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "engines-propellers"
+          }
+        },
+        "featured_collection5": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "flight-controls"
+          }
+        },
+        "featured_collection_zpFPLt": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "langing-gears-brakes-wheels"
+          }
+        },
+        "featured_collection_PTyxzY": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "fuel-systems"
+          }
+        },
+        "featured_collection_LFqF7R": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pilot-supplies"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection1",
+        "featured_collection2",
+        "featured_collection3",
+        "featured_collection4",
+        "featured_collection5",
+        "featured_collection_zpFPLt",
+        "featured_collection_PTyxzY",
+        "featured_collection_LFqF7R"
+      ],
+      "settings": {
+        "title": "Shop by Category",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "scheme-4",
+        "show_view_all": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 48,
+        "padding_bottom": 60
+      }
+    },
+    "multicolumn_CiANcE": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_PXPx8g": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Cessna-logo.png",
+            "title": "",
+            "text": "",
+            "link_label": "Shop Cessna",
+            "link": "shopify://collections/cessna"
+          }
+        },
+        "column_4jAqJQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mooney.gif",
+            "title": "",
+            "text": "",
+            "link_label": "Shop Mooney",
+            "link": "shopify://collections/mooney"
+          }
+        },
+        "column_mwkbdk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/kisspng-piper-aircraft-vero-beach-regional-airport-aviatio-cirrus-aircraft-5b3dc8f8268e86.6607159815307758001579.png",
+            "title": "",
+            "text": "",
+            "link_label": "Shop Piper",
+            "link": "shopify://collections/piper"
+          }
+        },
+        "column_bT8RLG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/kisspng-beechcraft-bonanza-aircraft-beechcraft-baron-airpl-5b243db5a6b2d1.8210628115291017496828.png",
+            "title": "",
+            "text": "",
+            "link_label": "Shop Beechcraft",
+            "link": "shopify://collections/beechcraft"
+          }
+        }
+      },
+      "block_order": [
+        "column_PXPx8g",
+        "column_4jAqJQ",
+        "column_mwkbdk",
+        "column_bT8RLG"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Shop by Brand",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection2": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Recent additions",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "recently-added",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "full_width": true,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-3",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 52
+      }
+    },
+    "17374326525308ca1a": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_W9GCrd": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_W9GCrd"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1737422705bf5d6cf9": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/kisspng-aircraft-spruce-specialty-co-airplane-homebuilt-5b1afd6c9ebb82.8322344415284954686502.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "https://www.Aircraftspruce.com"
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ezgif-5-1d355c77b3.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/logo-mcfarlane.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/past-logo-idea_1720729760__17186.webp",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3",
+        "column4"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-3",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "custom_liquid_MCLc96": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n  .partner-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    flex-wrap: wrap;\n    gap: 20px;\n    width: 60%;\n    margin: 0 auto;\n    padding: 0 10px;\n  }\n\n  .partner-container a {\n    flex: 1 1 150px; /* Default size for desktop */\n    text-align: center; /* Center images in their flex item */\n  }\n\n  @media screen and (max-width: 768px) {\n    .partner-container {\n      width: 100%; /* Full width on mobile */\n      justify-content: center; /* Center align for rows */\n    }\n\n    .partner-container a {\n      flex: 1 1 45%; /* Two items per row */\n      max-width: 45%; /* Ensures images fit within columns */\n    }\n  }\n</style>\n\n<div class=\"collection__title title-wrapper title-wrapper--no-top-margin page-width\" style=\"text-align: left; margin-bottom: 20px;\">\n  <h2 class=\"title inline-richtext h1 scroll-trigger animate--slide-in\">\n    Our Partners\n  </h2>\n</div>\n\n<div class=\"partner-container\">\n  <!-- Partner 1 -->\n  <a href=\"https://www.mcfarlaneaviation.com/\" target=\"_blank\" rel=\"noopener noreferrer\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0886/9494/8146/files/logo-mcfarlane.png?v=1721234042\" alt=\"Partner 1\" style=\"width: 150px; height: auto; display: block;\"/>\n  </a>\n\n  <!-- Partner 2 -->\n  <a href=\"https://vippilot.com/\" target=\"_blank\" rel=\"noopener noreferrer\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0886/9494/8146/files/Logo-blanc.png?v=1720963104\" alt=\"Partner 2\" style=\"width: 150px; height: auto; display: block;\"/>\n  </a>\n\n  <!-- Partner 3 -->\n  <a href=\"https://aircraftspruce.com\" target=\"_blank\" rel=\"noopener noreferrer\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0886/9494/8146/files/kisspng-aircraft-spruce-specialty-co-airplane-homebuilt-5b1afd6c9ebb82.8322344415284954686502.png?v=1721233632\" alt=\"Partner 3\" style=\"width: 150px; height: auto; display: block;\"/>\n  </a>\n</div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collection_list_PcXJLW": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_tnfWxV": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cessna"
+          }
+        },
+        "featured_collection_UKAd3B": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "piper"
+          }
+        },
+        "featured_collection_jJb8H6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mooney"
+          }
+        },
+        "featured_collection_aFWAJh": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "beechcraft"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_tnfWxV",
+        "featured_collection_UKAd3B",
+        "featured_collection_jJb8H6",
+        "featured_collection_aFWAJh"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "title": "Shop by Brands",
+        "heading_size": "h2",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "color_scheme": "scheme-4",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 16,
+        "padding_bottom": 8
+      }
+    },
+    "multicolumn1": {
+      "type": "multicolumn",
+      "blocks": {
+        "column7": {
+          "type": "column",
+          "settings": {
+            "title": "Super service chez FractionAIR Parts! Pièces d'avion en excellent état et livraison rapide. Très satisfait!",
+            "text": "<p>-Sam</p><p>Qc, Canada</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column8": {
+          "type": "column",
+          "settings": {
+            "title": "Got answers to my questions within minutes. Great service! I would recommend.",
+            "text": "<p>John </p><p>Chicago, IL</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column9": {
+          "type": "column",
+          "settings": {
+            "title": "FractionAIR Parts made finding used parts for my Piper PA-28 a breeze. The website is user-friendly, and the customer service is excellent. Quick shipping and great quality parts. Highly recommend!",
+            "text": "<p>David</p><p>Austin, TX</p>",
+            "link_label": "Shop now",
+            "link": ""
+          }
+        },
+        "column10": {
+          "type": "column",
+          "settings": {
+            "title": "Great experience with FractionAIR Parts! Found exactly what I needed quickly, and the parts arrived in perfect condition. The staff was very helpful. Will definitely shop here again!l",
+            "text": "<p>Emily<br/>Denver, CO</p>",
+            "link_label": "Shop now",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column7",
+        "column8",
+        "column9",
+        "column10"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Customer Love! See what they're saying.",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 68,
+        "padding_bottom": 68
+      }
+    },
+    "multicolumn2": {
+      "type": "multicolumn",
+      "blocks": {
+        "column11": {
+          "type": "column",
+          "settings": {
+            "title": "Quality Assurance",
+            "text": "<p>Shop confidently knowing that each product goes through strict quality assurance measures for the highest standard of excellence.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column12": {
+          "type": "column",
+          "settings": {
+            "title": "Expertise",
+            "text": "<p>Excellence is at the heart of everything we offer, from expert guidance to premium quality goods. Experience true expertise.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column13": {
+          "type": "column",
+          "settings": {
+            "title": "Client assistance",
+            "text": "<p>Receive expert client assistance tailored to your specific requirements. Let us help you with our dedicated support services.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column14": {
+          "type": "column",
+          "settings": {
+            "title": "Short lead times",
+            "text": "<p>Discover our products with short lead times for quick delivery. Get what you need when you need it.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column11",
+        "column12",
+        "column13",
+        "column14"
+      ],
+      "settings": {
+        "title": "What Makes FractionAIR Parts Unique?",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-3",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 48
+      }
+    },
+    "featured_blog_wyzJqM": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Articles",
+        "heading_size": "h1",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "17374226188d462d6d": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "rich_text",
+    "image_with_text_BKq4we",
+    "custom_liquid_PWwqAX",
+    "collection_list",
+    "multicolumn_CiANcE",
+    "featured_collection2",
+    "17374326525308ca1a",
+    "1737422705bf5d6cf9",
+    "multicolumn",
+    "custom_liquid_MCLc96",
+    "collection_list_PcXJLW",
+    "multicolumn1",
+    "multicolumn2",
+    "featured_blog_wyzJqM",
+    "17374226188d462d6d"
+  ]
+}

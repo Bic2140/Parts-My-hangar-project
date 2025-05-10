@@ -1,0 +1,119 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_PTTrhy": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_xmRnPY": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h2"
+          }
+        },
+        "text_mtHMGp": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_aUFLKq": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_xmRnPY",
+        "text_mtHMGp",
+        "buttons_aUFLKq"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_JyCgPk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NKzJ3B": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>FractionAIR Part’s Privacy Policy</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_FPRy8b": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At FractionAIR Parts, we value your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard your information when you interact with our services.<br/><br/><strong>Information We Collect</strong><br/><br/>We collect various types of information, including:<br/><br/>\t•\tPersonal Information: This may include your name, email address, shipping address, phone number, and payment information when you make purchases or create an account with us.<br/>\t•\tNon-Personal Information: We may collect non-personal information related to your device, browser type, and interaction with our website through cookies and other tracking technologies.<br/><br/><strong>How We Use Your Information</strong><br/><br/>We use your personal information for the following purposes:<br/><br/>\t•\tOrder Processing: To process and ship your orders and provide customer support.<br/>\t•\tCommunication: To send order updates, respond to inquiries, and provide information about promotions, events, or policy changes.<br/>\t•\tImprovement of Services: To enhance our website functionality, user experience, and customer service.<br/>\t•\tLegal Compliance: To comply with legal obligations and enforce our terms and conditions.</p><p><br/><strong>Sharing Your Information</strong><br/><br/>We do not sell, trade, or otherwise transfer your personal information to outside parties, except:<br/><br/>\t•\tService Providers: We may share information with third-party service providers to assist with order fulfillment, payment processing, and website management.<br/>\t•\tLegal Requirements: If required by law, we may disclose your information to comply with legal obligations, such as court orders or investigations.<br/><br/><strong>Data Security</strong><br/><br/>We implement appropriate technical and organizational security measures to protect your personal data from unauthorized access, loss, or alteration. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.<br/><br/><strong>Cookies and Tracking Technologies</strong><br/><br/>Our website uses cookies and similar technologies to collect information about your browsing behavior. These technologies help us improve your user experience, analyze website traffic, and personalize content. You can adjust your browser settings to decline cookies, though this may impact the functionality of our website.<br/><br/><strong>Your Rights</strong><br/><br/>You have the right to:<br/><br/>\t•\tAccess, correct, or delete your personal information.<br/>\t•\tObject to the processing of your data.<br/>\t•\tWithdraw consent for data processing at any time.<br/>\t•\tLodge a complaint with a data protection authority if you believe your rights have been violated.<br/><br/>To exercise your rights, please contact us at <a href=\"mailto:info@fractionairparts.com\" title=\"mailto:info@fractionairparts.com\">info@fractionairparts.com</a>.<br/><br/><strong>Retention of Data</strong><br/><br/>We retain your personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, or as required by law.<br/><br/><strong>Changes to This Privacy Policy</strong><br/><br/>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date. We encourage you to review this policy periodically.<br/><br/><strong>Contact Us</strong><br/><br/>If you have any questions about this Privacy Policy or the way we handle your information, please contact us at:<br/><br/>Email: info@fractionairparts.com<br/>Phone: +1-418-953-6351<br/>Address: 1391 rte Tewkesbury, Stoneham, Qc, Canada, G3C3A7<br/></p>"
+          }
+        },
+        "button_6bWM3k": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_NKzJ3B",
+        "text_FPRy8b",
+        "button_6bWM3k"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_PTTrhy",
+    "rich_text_JyCgPk"
+  ]
+}

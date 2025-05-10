@@ -1,0 +1,185 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_FRUpdw": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_TAzjq4": {
+          "type": "heading",
+          "settings": {
+            "heading": "FractionAIR’s Aircraft Salvage and Recovery Services",
+            "heading_size": "h1"
+          }
+        },
+        "text_HaKrNY": {
+          "type": "text",
+          "settings": {
+            "text": "FractionAIR offers specialized aircraft salvage and recovery services for aircrafts such as Piper, Cessna, Beechcraft, Mooney, Grumman, and more. With expertise in safely recovering and assessing aircraft, we deliver comprehensive solutions for aviation professionals, insurance adjusters, and asset managers seeking reliable, professional recovery operations backed by detailed documentation and precision handling.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_TAzjq4",
+        "text_HaKrNY"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/crashed-aircraft-wreckage.jpg",
+        "image_overlay_opacity": 20,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "fixed",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "collage_T3FNAc": {
+      "type": "collage",
+      "blocks": {
+        "image_Fy3BBt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_2345.jpg"
+          }
+        },
+        "image_egAenN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_2344.jpg"
+          }
+        },
+        "image_iwgaEU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_2343.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_Fy3BBt",
+        "image_egAenN",
+        "image_iwgaEU"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "<strong>Precision and Expertise: Highlights from Our Latest Aircraft Recovery</strong>",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "card_styles": "none",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_W4e3Fm": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_X8hmTF": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Trusted Solutions for Aircraft Salvage and Recovery</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_gXciNa": {
+          "type": "text",
+          "settings": {
+            "text": "<p>FractionAIR offers expert aircraft salvage and recovery services designed to support insurance adjusters, aviation professionals, and asset managers in the complex process of aircraft recovery. Our team brings years of hands-on experience and industry expertise to safely retrieve and assess damaged or decommissioned aircraft, providing detailed reports and comprehensive documentation to meet insurance requirements.</p><p>We understand the urgency and precision needed in salvage operations, ensuring a streamlined and responsive approach to each recovery project. FractionAIR works closely with insurance professionals to provide accurate assessments, allowing for informed decisions on asset value and potential recovery options. Our commitment to efficiency, transparency, and environmental responsibility makes us a trusted partner in salvage operations.</p><p><a href=\"mailto:info@fractionairparts.com\"><strong>Contact our experts</strong></a> to learn how our specialized salvage and recovery services can support your needs.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_CfKcjR": {
+          "type": "button",
+          "settings": {
+            "button_label": "Inquire Now!",
+            "button_link": "mailto:info@fractionairparts.com?subject=Aircraft%20salvage%20and%20recovery%20opportunity%20",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_X8hmTF",
+        "text_gXciNa",
+        "button_CfKcjR"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/abandoned-plane-in-sunflower-field.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_KjnLpK": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/IMG_2343.jpg",
+        "image_2": "shopify://shop_images/IMG_2344.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "fixed",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_banner_UFAWa6": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/IMG_2345.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "fixed",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    }
+  },
+  "order": [
+    "image_banner_FRUpdw",
+    "main",
+    "collage_T3FNAc",
+    "image_with_text_W4e3Fm",
+    "image_banner_KjnLpK",
+    "image_banner_UFAWa6"
+  ]
+}

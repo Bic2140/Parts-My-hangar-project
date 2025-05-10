@@ -1,0 +1,26 @@
+{% schema %}
+{
+  "name": "Account Menu",
+  "settings": [],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Account Menu"
+    }
+  ]
+}
+{% endschema %}
+
+{% assign account_menu = linklists['account-page-menu'] %}
+
+{% if account_menu.links.size > 0 %}
+  <nav class="account-menu">
+    <ul>
+      {% for link in account_menu.links %}
+        <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+{% else %}
+  <p>No menu items found. Please create a menu called "Account Page Menu".</p>
+{% endif %}

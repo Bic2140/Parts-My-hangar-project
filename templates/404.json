@@ -1,0 +1,70 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_hKmtaw": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_MFBcaG": {
+          "type": "heading",
+          "settings": {
+            "heading": "PAGE NOT FOUND",
+            "heading_size": "h1"
+          }
+        },
+        "text_yVyUUj": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        },
+        "buttons_3awQt7": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Continue Shopping",
+            "button_link_1": "http://www.fractionairparts.com",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_MFBcaG",
+        "text_yVyUUj",
+        "buttons_3awQt7"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Minimalist_artistic_representation_of_a_mayday_scene_involving_an_airplane_in_distress._The_image_should_use_clean_monochrome_lines_to_depict_an_airplane_emitting_abstract_smoke_trail.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "top-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-a6801b62-c01c-48e8-8efb-0e77cb7443f4",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-404",
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "image_banner_hKmtaw",
+    "main"
+  ]
+}

@@ -1,0 +1,72 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_with_text_W4e3Fm": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_X8hmTF": {
+          "type": "heading",
+          "settings": {
+            "heading": "About Us: FractionAIR Parts",
+            "heading_size": "h1"
+          }
+        },
+        "text_gXciNa": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Welcome to FractionAIR Parts, your trusted source for quality used aircraft parts. At FractionAIR Parts, our passion for aviation drives everything we do. Founded by a team of aviation enthusiasts, we recognized the growing need for affordable, reliable used parts to keep aircraft in the air.<br/><br/>Our journey began with a simple mission: to make flying more accessible by providing top-notch used parts for small general aviation aircraft. We started by salvaging aircraft, parting them out, and selling components to private pilots and businesses in our area. This approach allowed us to offer a wide range of parts, including engines and avionics, at competitive prices.<br/><br/>We specialize in parts for popular general aviation aircraft such as Pipers, Cessnas, Beechcrafts, and Mooneys. Each part in our inventory undergoes a rigorous inspection and cleaning process to ensure it meets our high standards. While our parts are sold “as removed,” they are thoroughly checked to ensure they are in good condition.<br/><br/>Quality is at the heart of everything we do. Although we do not certify the parts, we ensure that every component we sell is inspected and cleaned to meet our high standards. We believe in providing only the best to our customers, ensuring that every part you purchase from us is reliable and ready for use.<br/><br/>FractionAIR Parts proudly serves a diverse range of customers, including private pilots, flight schools, maintenance facilities, and other players in the aviation industry. Our strategic location at Neuville Airport in Neuville, Quebec, enables us to efficiently manage our inventory and quickly ship parts to customers wherever they are needed.</p><p><br/>In the aviation industry, sourcing aircraft for salvage can be challenging. We have overcome this hurdle by partnering with insurance companies and other stakeholders to establish a reliable supply chain. This ensures that we can continue to provide the parts our customers need, maintaining our reputation for quality and reliability.<br/><br/>Looking ahead, our goal is to become a leader in the used aircraft parts industry. We want FractionAIR Parts to be synonymous with quality, reliability, and exceptional service in aircraft salvage and recovery. Our vision is to expand our inventory, enhance our services, and continue building strong relationships with our customers.<br/><br/>We invite you to explore our website, browse our inventory, and reach out with any questions. Whether you’re looking for a specific part or need expert advice, our team is here to help. Contact us at info@fractionairparts.com or visit us at Neuville Airport.<br/><br/>Thank you for choosing FractionAIR Parts. We look forward to serving you and helping you keep your aircraft in the skies.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_CfKcjR": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "shopify://collections/all",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_X8hmTF",
+        "text_gXciNa",
+        "button_CfKcjR"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/large-group-standing-in-office.jpg",
+        "height": "large",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_W4e3Fm"
+  ]
+}
