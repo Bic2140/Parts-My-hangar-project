@@ -88,6 +88,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     const meta = {};
     const metafields = Array.isArray(product.metafields) ? product.metafields : [];
 
+    console.log("🔍 Aircrafts:", aircrafts);
+    console.log("🔍 Product metafields:", metafields);
+    console.log("🔍 Product meta:", meta);
+
     const ref = metafields.find(mf => mf && mf.key === 'removed_from_aircraft');
     if (ref?.reference?.fields) {
       ref.reference.fields.forEach(f => {
@@ -99,9 +103,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const isMatch = aircrafts.some(ac => ac.type === meta.make);
     if (isMatch) {
-      matchedHandles.push(product.handle);
+      // Ensure the handle matches the format used in Shopify URLs
+      matchedHandles.push(product.handle); // Ensure this is the correct handle format
     }
   });
+
+  console.log("🎯 Matched handles:", matchedHandles);
 
   if (matchedHandles.length === 0) {
     grid.innerHTML = `<p>No matched parts found for your aircraft.</p>`;
@@ -111,20 +118,24 @@ document.addEventListener('DOMContentLoaded', async () => {
   console.log(`🎯 Matched ${matchedHandles.length} products. Loading in chunks...`);
   const chunks = chunkArray(matchedHandles, 20);
 
-for (const chunk of chunks) {
-const rawHandles = chunk.join(',');
-const sectionId = 'matched-products-server';
-const url = `/sections?section_id=matched-products-server&handles=${encodeURIComponent(rawHandles)}`;
-
-
-  console.log(`📡 Fetching chunk → ${url}`);
-
-  try {
-    const response = await fetch(url);
-    const html = await response.text();
-    grid.innerHTML += html;
-  } catch (err) {
-    console.error('❌ Failed to load chunk:', err);
+  for (const chunk of chunks) {
+    const rawHandles = chunk.join(',');
+    const url = `/sections?section_id=matched-products-server&handles=${encodeURIComponent(rawHandles)}`;
+    console.log(`📡 Fetching chunk → ${url}`); // Debugging the URL
+    try {
+      const response = await fetch(url, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json', // Ensure proper headers
+        },
+      });
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const html = await response.text();
+      grid.innerHTML += html;
+    } catch (err) {
+      console.error('❌ Failed to load chunk:', err);
+    }
   }
-}
 });
