@@ -1,0 +1,8 @@
+<div id="matched-aircraft-parts" data-aircrafts='{{ customer.metafields.hangar.aircrafts.value | json }}'>
+  <h2 class="text-2xl font-bold mb-4">Parts matched to your aircraft</h2>
+  <div id="matched-products-container">
+    <p>Loading matched products...</p>
+  </div>
+</div>
+
+<script src="{{ 'matched-parts.js' | asset_url }}" defer></script>

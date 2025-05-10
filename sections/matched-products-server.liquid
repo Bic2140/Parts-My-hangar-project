@@ -1,0 +1,20 @@
+{% assign query_string = request.query_string %}
+{% assign handles_string = query_string | split: 'handles=' | last | split: '&' | first %}
+{% assign handles_string = handles_string | replace: '%2C', ',' | replace: '%2c', ',' %}
+{% assign handles = handles_string | split: ',' %}
+
+<div class="debug-output" style="padding: 1em; background: #f3f3f3; border: 1px solid #ccc; font-size: 14px;">
+  <strong>🛠 Debug: Rendering matched-products-server</strong><br>
+  <strong>🔍 request.query_string:</strong> {{ request.query_string }}<br>
+  <strong>🔍 Extracted handles string:</strong> {{ handles_string }}<br>
+  <strong>🔍 Parsed handles ({{ handles.size }}):</strong> {{ handles | join: ', ' }}
+</div>
+
+{% for handle in handles %}
+  {% assign product = all_products[handle] %}
+  {% if product %}
+    {% render 'card-product', product: product %}
+  {% else %}
+    <div class="text-sm text-red-500">❌ Product not found: {{ handle }}</div>
+  {% endif %}
+{% endfor %}
